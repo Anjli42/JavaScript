@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="" method="post">
+    <input type="number" name="first" id="first">
+    <input type="number" name="second" id="second">
+    <br>
+    <br>
+
+    <button onclick="add()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="devide()">/</button>
+
+    <div id="result"></div>
+    <script>
+        function add() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            sum = parseInt(a) + parseInt(b);
+            console.log(sum);
+            alert(sum)
+            document.getElementById("result").innerText = sum;
+        }
+
+        function minus() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            sum = parseInt(a) - parseInt(b);
+            console.log(sum);
+            alert(sum)
+            document.getElementById("result").innerText = sum;
+        }
+
+        function multiply() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            sum = parseInt(a) * parseInt(b);
+            console.log(sum);
+            alert(sum)
+            document.getElementById("result").innerText = sum;
+        }
+
+        function devide() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            sum = parseInt(a) / parseInt(b);
+            console.log(sum);
+            alert(sum)
+            document.getElementById("result").innerText = sum;
+        }
+    </script>
+    </form>
+</body>
+</html>

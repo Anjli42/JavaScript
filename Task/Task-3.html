@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #Box {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+
+        .btn {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div Id="Box"></div>
+
+    <div class="btn">
+        <button onclick="A()">A</button>
+        <button onclick="B()">B</button>
+        <button onclick="C()">C</button>
+        <button onclick="D()">D</button>
+        <button onclick="E()">E</button>
+    </div>
+
+
+    <script>
+        let a = document.getElementById('Box')
+
+        let isColor = true
+        function A() {
+            if (isColor) {
+                a.style.backgroundColor = 'red'
+                a.style.color = 'white'
+            }
+            else {
+                a.style.backgroundColor = 'red'
+                a.style.color = 'black'
+            }
+            isColor = !isColor
+        }
+
+        function B() {
+            if (isColor) {
+                a.style.backgroundColor = 'pink'
+                a.style.color = 'white'
+            }
+            else {
+                a.style.backgroundColor = 'pink'
+                a.style.color = 'black'
+            }
+            isColor = !isColor
+        }
+
+        function C() {
+            if (isColor) {
+                a.style.backgroundColor = 'blue'
+                a.style.color = 'white'
+            }
+            else {
+                a.style.backgroundColor = 'blue'
+                a.style.color = 'black'
+            }
+            isColor = !isColor
+        }
+
+        function D() {
+            if (isColor) {
+                a.style.backgroundColor = 'orange'
+                a.style.color = 'white'
+            }
+            else {
+                a.style.backgroundColor = 'orange'
+                a.style.color = 'black'
+            }
+            isColor = !isColor
+        }
+
+        function E() {
+            if (isColor) {
+                a.style.backgroundColor = 'purple'
+                a.style.color = 'white'
+            }
+            else {
+                a.style.backgroundColor = 'purple'
+                a.style.color = 'black'
+            }
+            isColor = !isColor
+        }
+    </script>
+</body>
+
+</html>

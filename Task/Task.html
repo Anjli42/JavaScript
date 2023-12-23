@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #Box {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+
+        .btn {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div Id="Box"></div>
+
+    <div class="btn">
+        <button onclick="Next()">Next</button>
+        <button onclick="Previous()">Previous</button>
+    </div>
+
+    <script>
+        let a = document.getElementById('Box')
+
+        let colors = [red, green, purple, blue, orange]
+
+
+        // function applyColor() {
+        //     Box.style.backgroundColor = colors[isColor];
+        // }
+
+        let isColor = true
+        function Next() {
+            if (isColor) {
+                a.style.backgroundColor = 'red'
+            }
+            else {
+                a.style.backgroundColor = 'green'
+            }
+            isColor = !isColor
+        }
+
+        function Previous() {
+            if (isColor) {
+                a.style.backgroundColor = 'blue'
+            }
+            else {
+                a.style.backgroundColor = 'purple'
+            }
+            isColor = !isColor
+        }
+
+
+        // let i = 0
+        // function inremenet() {
+        //     i++
+        //     console.log(i);
+        // }
+    </script>
+</body>
+
+</html>
