@@ -4,58 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-2</title>
+    <style>
+        #result {
+            border: 1px solid gray;
+            width: 6%;
+            padding: 20px 20px;
+            margin: 16px 99px;
+        }
+    </style>
 </head>
 <body>
     <h1>Calculator</h1>
-    <form action="" method="post">
     <input type="number" name="first" id="first">
     <input type="number" name="second" id="second">
     <br>
     <br>
 
-    <button onclick="add()">+</button>
-    <button onclick="minus()">-</button>
-    <button onclick="multiply()">*</button>
-    <button onclick="devide()">/</button>
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
 
     <div id="result"></div>
     <script>
-        function add() {
+        function addition() {
             let a = document.getElementById('first').value;
             let b = document.getElementById('second').value;
             sum = parseInt(a) + parseInt(b);
             console.log(sum);
-            alert(sum)
             document.getElementById("result").innerText = sum;
         }
 
-        function minus() {
+        function subtraction() {
             let a = document.getElementById('first').value;
             let b = document.getElementById('second').value;
             sum = parseInt(a) - parseInt(b);
             console.log(sum);
-            alert(sum)
             document.getElementById("result").innerText = sum;
         }
 
-        function multiply() {
+        function multiplication() {
             let a = document.getElementById('first').value;
             let b = document.getElementById('second').value;
             sum = parseInt(a) * parseInt(b);
             console.log(sum);
-            alert(sum)
             document.getElementById("result").innerText = sum;
         }
 
-        function devide() {
+        function division() {
             let a = document.getElementById('first').value;
             let b = document.getElementById('second').value;
             sum = parseInt(a) / parseInt(b);
             console.log(sum);
-            alert(sum)
             document.getElementById("result").innerText = sum;
         }
     </script>
-    </form>
 </body>
 </html>

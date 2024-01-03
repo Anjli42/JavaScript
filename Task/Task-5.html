@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(191, 188, 188);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-decoration: double underline;
+        padding: 50px;
+      }
+
+      input {
+        width: 50%;
+        border: 2px solid black;
+        padding: 16px 20px;
+        font-size: 20px;
+      }
+
+      button {
+        width: 10%;
+        font-weight: bolder;
+        padding: 10px 0;
+        margin: 6px;
+        border: 2px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Convertor</h1>
+    <input type="text" id="Result"><br><br>
+    <button onclick="uppercase()">Uppercase</button>
+    <button onclick="lowercase()">Lowercase</button>
+    <button onclick="replace()">Replace</button>
+    <button onclick="length()">Length</button><br>
+    <button onclick="concat()">Concat</button>
+    <button onclick="trim()">Trim</button>
+    <button onclick="split()">Split</button>
+    <button onclick="repeat()">Repeat</button><br>
+
+    <script>
+
+      function uppercase() {
+        let a = document.getElementById("Result").value;
+        document.getElementById("Result").value = a.toUpperCase();
+      }
+
+      function lowercase() {
+        let b = document.getElementById("Result").value;
+        document.getElementById("Result").value = b.toLowerCase();
+      }
+
+      function replace() {
+        let c = document.getElementById("Result").value;
+        document.getElementById("Result").value = c.replace(c,'Anjali');
+      }
+
+      function length() {
+        let d = document.getElementById("Result").value;
+        document.getElementById("Result").value = d.length;
+      }
+
+      function concat() {
+        let d = document.getElementById("Result").value;
+        document.getElementById("Result").value = d.concat(' Purohit');
+      }
+
+      function trim() {
+        let e = document.getElementById("Result").value;
+        document.getElementById("Result").value = e.trim();
+      }
+
+      function split() {
+        let f = document.getElementById("Result").value;
+        document.getElementById("Result").value = f.split('');
+      }
+
+      function repeat() {
+        let g = document.getElementById("Result").value;
+        document.getElementById("Result").value = g.repeat(4);
+      }
+    </script>
+  </body>
+</html>

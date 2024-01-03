@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS</title>
+</head>
+
+<body>
+    <h1>Q & A</h1>
+
+    <h3>1. What is Javascript</h3>
+    <ul>
+        <li>
+            <p>JavaScript is a lightweight, single-threaded, and interpreted compiled programming
+                language. </p>
+        </li>
+        <li>
+            <p>JavaScript can be used for Client-side (Front-end development) developments as well as Server-side
+                (Back-end development) developments.</p>
+        </li>
+        <li>
+            <p>dynamically typed language (Developers can use JavaScript to make websites dynamic and interactive.)</p>
+        </li>
+        <li>
+            <p>Handle HTML and CSS</p>
+        </li>
+        <li>
+            <p>Event Based Programming Language</p>
+        </li>
+        <li>
+            <p>Get and set cookies, ask questions to the visitor, show messages.</p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>2. Creating First Javascript Program</h3>
+    <ul>
+        <!-- () - parentheses -->
+        <li>
+            <p>alert() method</p>
+        </li>
+        <li>
+            <p>console.log() method</p>
+        </li>
+        <li>
+            <p>document.write() method</p>
+        </li>
+        <li>
+            <p>prompt() method</p>
+        </li>
+    </ul>
+    <script>
+        // alert("Hello, World!");
+        // console.log("Hello, World!");
+        // let name = prompt("What is your name?");
+    </script>
+    <br>
+
+    <h3>3. Way to apply Javascript</h3>
+    <ul>
+        <p><!-- If required in head section  -->
+            <script>
+                console.log("Hey I'm in Head Section.");
+            </script>
+        </p>
+        <p> <!-- Just Before Closing Body section  -->
+            <!-- Ideally (mostly) -->
+
+            <script>
+                console.log("Hey I'm in Body Section.");
+            </script>
+
+        <p><!-- In external File  -->
+
+            <script src="script.js"></script>
+        </p>
+    </ul>
+    <br>
+
+    <h3>4. Event in Javascript</h3>
+    <ul>
+        <li>
+            <p>An HTML event can be something the browser does, or something a user does.</p>
+        </li>
+        <li>Types:</li>
+        <ul>onchange: An HTML element has been changed</ul>
+        <ul>onclick: The user clicks an HTML element</ul>
+        <ul>onmouseover: The user moves the mouse over an HTML element</ul>
+        <ul>onmouseout: The user moves the mouse away from an HTML element</ul>
+        <ul>onkeydown: The user pushes a keyboard key</ul>
+        <ul>onload: The browser has finished loading the page</ul>
+        <li>
+            <p>Ex : The onclick Attribute :
+
+                <button onclick="document.getElementById('demo').innerHTML= Date()">The time is?</button>
+
+            <p id="demo"></p>
+            </p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>5. Features of Javascript</h3>
+    <ul>
+        <li>
+            <p>Dynamic typing</p>
+        </li>
+        <li>
+            <p>Case sensitive</p>
+        </li>
+        <li>
+            <p>Light-Weight Scripting Language</p>
+        </li>
+        <li>
+            <p>Object-Oriented Programming support</p>
+        </li>
+        <li>
+            <p>Single-threaded (single task at a time)</p>
+        </li>
+        <li>
+            <p>Interpreted Language (processed line by line.)</p>
+        </li>
+        <li>
+            <p>both on the client side and on the server-side.</p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>6. JavaScript Application</h3>
+    <ul>
+        <li>
+            <p>Web Development (Front-end & back-end development)</p>
+        </li>
+        <li>
+            <p>Mobile App Development (React Native, Ionic, Mobile Angular UI, jQuery Mobile)</p>
+        </li>
+        <li>
+            <p>Game Development</p>
+        </li>
+        <li>
+            <p>Apps for Smart Watches</p>
+        </li>
+        <li>
+            <p>Making Drawing Applications (canvas)</p>
+        </li>
+        <li>
+            <p>Making Charts and Reports</p>
+        </li>
+        <li>
+            <p>Presentations </p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>7. How to run Javascript</h3>
+    <ul>
+        <li>
+            <p>Inline JavaScript</p>
+            <p>In head section</p>
+        </li>
+        <li>
+            <p>Internal JavaScript</p>
+            <p>Inside style tag section, JS uses inside script tag</p>
+        </li>
+        <li>
+            <p>External JavaScript</p>
+            <p>
+                <script src="./script.js"></script>
+            </p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>8. Variable</h3>
+    <ul>
+        <li>
+            <p>Variables are Containers for Storing Data</p>
+        </li>
+        <li>
+            <p>rules</p>
+        </li>
+        <ul>
+            <li>start with => _, alpha, $</li>
+            <li> Assignment operator => ' = '</li>
+        </ul>
+        <li>
+            <p>Types : 3</p>
+        </li>
+        <p><b>var: global scope</b>
+            var a = 10; // Initialization and decalration
+            var a = "krish"; // Re-decalreation is possible
+            a = "Jitu Bhaiya"; // Re-assignement is possible
+            console.log(a);
+        </p>
+        <p><b>let: block scope</b>
+            let marks = 85; // Initialization and decalration
+            // let marks = 90; // Re-decalreation is not possible
+            marks = 95; // Re-assignement is possible
+            console.log(marks);
+        </p>
+        <p><b>const: block scope</b>
+            const fav_Actress = "Madhubala"; // Initialization and decalration
+            // const fav_Actress = "Alia";// Re-decalreation is not possible
+            // fav_Actress = "Katrina"; // Re-assignement is not possible
+
+            console.log(fav_Actress);
+        </p>
+
+        block scope : {
+        inside curly brackets
+        }
+    </ul>
+    <br>
+
+    <h3>9. Data Types in JS</h3>
+    <ul>
+        <li>
+            <p>able to operate on variables</p>
+        </li>
+        <li>
+            <p>Programming languages that allow such things, such as JavaScript,#
+                are called “dynamically typed”, meaning that there exist data types,
+                but variables are not bound to any of them.</p>
+        </li>
+        <li>
+            <p>Types : 2
+        <li>Premitive Data Types :
+            <p>1.Number
+                <!-- <script>
+                    let a = 10
+                    console.log(a);
+                    console.log(typeof a);
+                </script> -->
+            </p>
+            <p>2.null
+                <!-- <script>
+                    let b = null;
+                    console.log(b);
+                </script> -->
+            </p>
+            <p>3.String
+                <!-- <script>
+                    let c = "Akshay";  // Double inverted Comma
+                    let d = 'Akshay';   // // Single inverted Comma
+                    let e = "Akshay is 'good' boii";      // Combination of double and Single Comma
+                    let f = `Akshay is 'good' boii in "Mern" Stack`;    // BackTick or Template Literals
+                    console.log(c);
+                </script> -->
+            </p>
+            <p>4.Symbol
+                <!-- <script>
+                    let d = Symbol("hey")
+                    console.log(d);
+                    console.log(typeof d);
+                </script> -->
+            </p>
+            <p>5.Boolean
+                <!-- <script>
+                    let e = true
+                    console.log(e);
+                </script> -->
+            </p>
+            <p>6.BigInt
+                <!-- <script>
+                    let f = 516511141456112462156456n
+                    console.log(f);
+                </script> -->
+            </p>
+            <p>7.Undefined
+                <!-- <script>
+                    let g;
+                    console.log(g);
+                </script> -->
+            </p>
+        </li>
+        <li>Non-Premitive Data Types :
+            <p>1.Array
+                <!-- <script>
+                    let arr = [10, "hello", false, 30];
+                    console.log(arr);
+                    console.log(arr.length);
+                    console.log(typeof arr);
+                </script> -->
+            </p>
+            <p>2.Object
+                <!-- <script>
+                    let obj = {
+                        // key: value,
+                        name: "Purohit",
+                        age: 25,
+                        emailAdd: "Purohit@google.com",
+                    };
+                    console.log(obj);
+                    console.log(typeof obj);
+                </script> -->
+            </p>
+        </li>
+        </p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>10.Operators in JS</h3>
+    <ul>
+        <li>
+            <p></p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>11. Switch and Loops in JS</h3>
+    <ul>
+        <li>
+            <p></p>
+        </li>
+    </ul>
+    <br>
+
+    <h3>12. Function in JS</h3>
+    <ul>
+        <li>
+            <p>defined with the function keyword, followed by a name, followed by parentheses ()</p>
+        </li>
+        <li>
+            <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+        </li>
+        <li><p>The parentheses may include parameter names separated by commas:
+            (parameter1, parameter2, ...)</p></li>
+            <li><p>function is placed inside curly brackets: {}</p></li>
+    </ul>
+    <br>
+
+</body>
+
+</html>

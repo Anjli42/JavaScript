@@ -38,43 +38,37 @@
         <button onclick="Previous()">Previous</button>
     </div>
 
+
     <script>
         let a = document.getElementById('Box')
 
-        let colors = [red, green, purple, blue, orange]
-
-
-        // function applyColor() {
-        //     Box.style.backgroundColor = colors[isColor];
-        // }
-
-        let isColor = true
+        let Color = 0
         function Next() {
-            if (isColor) {
+            if (Color) {
                 a.style.backgroundColor = 'red'
             }
             else {
-                a.style.backgroundColor = 'green'
+                a.style.backgroundColor = 'pink'
             }
-            isColor = !isColor
-        }
-
-        function Previous() {
-            if (isColor) {
-                a.style.backgroundColor = 'blue'
-            }
-            else {
-                a.style.backgroundColor = 'purple'
-            }
-            isColor = !isColor
+            Color = !Color
         }
 
 
-        // let i = 0
-        // function inremenet() {
-        //     i++
-        //     console.log(i);
-        // }
+            function Previous() {
+                if (Color) {
+                    a.style.backgroundColor = 'blue'
+                }
+                else {
+                    a.style.backgroundColor = 'orange'
+                }
+                Color = !Color
+            }
+
+            let i = 0
+        function inremenet() {
+            i++
+            console.log(i);
+        }
     </script>
 </body>
 
