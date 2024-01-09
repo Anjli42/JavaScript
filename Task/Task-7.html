@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-7</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      body {
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid rgb(102, 102, 174);
+        padding: 80px 0;
+      }
+
+      h1 {
+        font-size: 60px;
+        color: cornflowerblue;
+        padding-bottom: 30px;
+      }
+
+      label {
+        display: inline-block;
+        width: 30%;
+        font-size: 18px;
+      }
+
+      input {
+        width: 35%;
+        padding: 2px 0;
+      }
+
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+
+    <form action="" method="post">
+      <label for="uname">Enter Your Username :</label>
+      <input
+        type="text"
+        id="uname"
+        onclick="Validation(this, 'error1', 'Username')"
+      />
+      <span id="error1"></span><br /><br />
+
+      <label for="email">Enter Your Email-Id :</label>
+      <input
+        type="email"
+        id="email"
+        onclick="Validation(this, 'error2', 'Email-Id')"
+      />
+      <span id="error2"></span><br /><br />
+
+      <label for="pw">Enter Your Password :</label>
+      <input
+        type="password"
+        id="pw"
+        onclick="Validation(this, 'error3', 'Password')"
+      />
+      <span id="error3"></span><br /><br />
+
+      <label for="pnumber">Enter Your Phone-Number :</label>
+      <input
+        type="number"
+        id="pnumber"
+        onclick="Validation(this, 'error4', 'Phone-Number')"
+      />
+      <span id="error4"></span>
+    </form>
+
+    <script>
+      function Validation(a, span, b) {
+        console.log(a);
+        console.log(span);
+        console.log(b);
+
+        if (a.value == "") {
+          document.getElementById(span).innerText = "Enter Your Valid" + b;
+        } else {
+          document.getElementById(span).innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>

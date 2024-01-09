@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task-4</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        #Box {
-            width: 400px;
-            height: 400px;
-            border: 2px solid black;
-            margin: 0 auto;
-        }
+      #Box {
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+        margin: 0 auto;
+      }
 
-        .btn {
-            margin: 40px 0;
-            text-align: center;
-        }
+      .btn {
+        margin: 40px 0;
+        text-align: center;
+      }
 
-        button {
-            padding: 10px 40px;
-        }
+      button {
+        width: 6%;
+        padding: 10px 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div Id="Box"></div>
+  <body>
+    <div id="Box"></div>
 
     <div class="btn">
-        <button onclick="Next()">Next</button>
-        <button onclick="Previous()">Previous</button>
+      <button onclick="Previous()">Previous</button>
+      <button onclick="Next()">Next</button>
     </div>
 
-
     <script>
-        let a = document.getElementById('Box')
+      let Color = ["Transparent", "Red", "Blue", "Purple", "Orange", "Green", "pink"];
+      let i = 0;
 
-        let Color = 0
-        function Next() {
-            if (Color) {
-                a.style.backgroundColor = 'red'
+      const Box = document.getElementById("Box");
+      Box.style.backgroundColor = Color[i];
+
+      function Next() {
+            if (i ==7) {
+                i=0
+                
             }
-            else {
-                a.style.backgroundColor = 'pink'
-            }
-            Color = !Color
-        }
-
-
-            function Previous() {
-                if (Color) {
-                    a.style.backgroundColor = 'blue'
-                }
-                else {
-                    a.style.backgroundColor = 'orange'
-                }
-                Color = !Color
-            }
-
-            let i = 0
-        function inremenet() {
             i++
-            console.log(i);
+            Box.style.backgroundColor = Color[i]
+        }
+        function Previous() {
+            if (i ==0) {
+                i=7
+                
+            }
+            i--
+            Box.style.backgroundColor = Color[i]
         }
     </script>
-</body>
-
+  </body>
 </html>
