@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img-change</title>
+    <style>
+        #Imgs {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* #img-2{
+            display: none;
+        } */
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="change1()">Btn-1</button>
+    <button onclick="change2()">Btn-1 & 2</button>
+    
+    <div id="Imgs">
+        <img src="imgs/1.jpg" alt="" id="img-1" width="40%">
+        <img src="imgs/2.avif" alt="" id="img-2">
+    </div>
+    <script>
+
+        let a = document.getElementById('img-1')
+        let b = document.getElementById('img-2')
+        // function change1() {
+        //     a.style.display = 'none'
+        //     b.style.display = 'block'
+        // }
+
+        // function change2() {
+        //     b.style.display = 'none'
+        //     a.style.display = 'block'
+        // }
+
+
+    </script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputType</title>
+</head>
+<body>
+    <input type="text" id="Result" value="500">
+
+    <select name="Countries-Name">
+        <option value="1" onclick="Ind()">India</option>
+        <option value="2" onclick="us()">USA</option>
+        <option value="3" onclick="aus()">Australia</option>
+        <option value="4" onclick="rs()">Russia</option>
+        <option value="5" onclick="mc()">Mexico</option>
+    </select>
+</body>
+</html>
+
+<script>
+    function change() {
+      let a = 500;
+
+function us() {
+    document.getElementById('Result').value = (a * 83.14)   
+    
+}
+
+function aus() {
+    document.getElementById('Result').value = (a * 53.57)   
+    
+}
+
+function rs() {
+    document.getElementById('Result').value = (a * 0.94)   
+    
+}
+
+function mc() {
+    document.getElementById('Result').value = (a * 4.84)   
+    
+}
+
+    }
+
+
+
+
+
+
+
+
+
+</script>
